@@ -2,12 +2,31 @@
 <html lang="en">
     <head>
         <title>Construction Project</title>
-        <link rel="stylesheet" href="../CSS/style.css" type="text/css">      
+        <link rel="stylesheet" href="../CSS/style.css" type="text/css">  
+        <script src="https://unpkg.com/react@17.0.2/umd/react.development.js" crossorigin></script>    
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> 
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>   
     </head>
 
     <body>
+        <!-- <div id="lists"> 
+            <script type="text/babel">
+                function Header(prop)
+                {
+                    // console.log(prop);
+                    return (
+                        <header>
+                          <h1>Manideep</h1>
+                        </header>
+                    )
+                }
+                ReactDOM.render(Header("mani"),document.getElementById("lists"));
+            </script>
+            </div>
+             -->
         <div class="banner">
             <div  class="navbar">
+                
                 <img src="../Images/logo.PNG" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -18,16 +37,18 @@
 
                 </ul>
             </div>
+            <div id="root"></div>
+            
             <div class="content">
                 <h1>DREAM HOUSE</h1>
-                <p>We provide you everything in a single goo!</p>
+                <p id="demo">We provide you everything in a single goo!</p>
                 <div>
                     <button type="button"><span></span> LOG IN</button>
                     <button type="button"><span></span> SIGN UP</button>
                 </div>
             </div>
         </div>
-        
+    <!-- <script src="../Javascript/script.js"></script> -->
     </body> 
 
 </html>    
